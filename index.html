@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <title>Калькулятор степендии</title>
+</head>
+
+<body>
+    <section class="calculator mt-3">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="display-2 fw-bold">Калькулятор стипендии</h1>
+                    <form>
+                        <div class="mb-3 mt-2">
+                            <label for="average_rating" class="form-label">Средний Текущий балл</label>
+                            <input type="text" class="form-control" id="average_rating"
+                                placeholder="Количество баллов">
+                        </div>
+                        <div class="mb-3 mt-2">
+                            <label for="rk1" class="form-label">Рубежка 1</label>
+                            <input type="text" class="form-control" id="rk1" placeholder="Количество баллов">
+                        </div>
+                        <div class="mb-3 mt-2">
+                            <label for="rk2" class="form-label">Рубежка 2</label>
+                            <input type="text" class="form-control" id="rk2" placeholder="Количество баллов">
+                        </div>
+                        <div class="mb-3 mt-2">
+                            <label for="select">Тип</label>
+                            <select class="form-select" id="select">
+                                <option value="1">Стипендия</option>
+                                <option value="2">Повышение</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Высчитать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info mt-5 mb-3">
+        <div class="container">
+            <div class="card">
+                <div class="card-body info__container">
+                    <h2 class="display-5 fw-bold info__title">Информация</h2>
+                    <p class="fs-4 rd__text">РД: </p>
+                    <p class="fs-4 session__text">До степендии: </p>
+                    <p class="author">Инстаграм автора: @yesworldd</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app/js/script.js"></script>
+</body>
+
+</html>
